@@ -1,0 +1,36 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+html {
+  height: 100%;
+}
+body {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  height: 100%;
+  padding-top: 80px;
+}
+
+.wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px;
+  padding: 0 0 60px;
+}
+
+#footer {
+  height: 40px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #3d3d3d;
+  background-color: #cccccc;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #ffffff;
+}
+
+.header {
+  height: 50px;
+  background-color: #cccccc;
+}
