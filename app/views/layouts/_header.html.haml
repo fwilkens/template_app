@@ -1,18 +1,9 @@
-.container
-  .navbar-header
-    %h3 AppName
-    %button.navbar-toggle{toggle: 'collapse', target: '#navHeaderCollapse'}
-      %span.icon-bar
-      %span.icon-bar
-      %span.icon-bar
-
-  .collapse.navbar-collapse#navHeaderCollapse
-    %ul.nav.navbar-nav.navbar-right
-      %li= link_to 'NavItem', '#'
-      %li= link_to 'NavItem', '#'
-      %li= link_to 'NavItem', '#'
-      - if user_signed_in?
-        %li= link_to 'logout', destroy_user_session_path, {method: :delete}
-      - else
-        %li= link_to 'login', new_user_session_path
-        %li= link_to 'register', new_user_registration_path
+%nav.navbar.navbar-light.navbar-full.navbar-fixed-top.bg-faded
+  %a.navbar-brand{:href => '#'} TEMPLATE
+  %ul.nav.navbar-nav
+    %li.nav-item.active
+      %a.nav-link{:href => '#'} HOME
+    %li.nav-item
+      %a.nav-link{:href => '#'} NAV
+    %li.nav-item
+      %a.nav-link{:href => '#'} OTHER

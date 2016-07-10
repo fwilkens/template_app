@@ -8,10 +8,10 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
-    .wrap
-      %nav.navbar.navbar-default.navbar-fixed-top.header{role: "navigation"}
-        = render partial: 'layouts/header'
-      .content-container.container
-        = yield
-    .footer
-      = render partial: 'layouts/footer'
+    .container
+      = render partial: 'layouts/header'
+    .container.content-container
+      = yield
+    .container-footer
+      .footer
+        = render partial: 'layouts/footer'
